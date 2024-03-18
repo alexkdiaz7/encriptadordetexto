@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="imagenes/9394029-bobby-está-buscando-algo-con-su-lupa.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header class="frentepagina">Encriptador de texto</header>
+  <div class="container">
+    <div class="encriptar">
+        <textarea name="texto"  class="texto" id="texto"  cols="30" rows="10" placeholder="ingresa el texto" oninput="validarTexto()"></textarea>
+    </div>
+    <div class="terminos">
+        <p>solo letras minusculas y sin asento</p>
+    </div>
+    <div class="botones">
+        <button class="boton-encriptar" type="button" onclick="encriptarTexto();">encriptar</button>
+        <button class="boton-desencriptar" type="button" onclick="desencriptartexto();">desencriptar</button>
+        <button class="boton-copiar" onclick="copiarTexto()">Copiar</button>
+    </div>
+</div>
+<div class="encriptado">
+    <img src="imagenes/9394029-bobby-está-buscando-algo-con-su-lupa.jpg" alt="" id="muñeco">
+    <div class="mensaje-encriptado" id="mensaje-encriptado">
+        <h2 id="titulo-mensaje">ningun mensaje encriptado</h2>
+        <p id="parrafo">Aqui se muestra el mensaje encriptado</p>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+    </div>
+    
+</div>
+<footer class="piedepagina">Por: David Diaz</footer>
+</body>
+<script src="script.js"></script>
+</html>
